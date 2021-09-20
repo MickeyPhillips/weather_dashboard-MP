@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/themes/base/jquery-ui.min.css">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Weather Dashboard Mickey Phillips</title>
+</head>
+<body>
+    <header>
+        <h1>Weather DashBoard</h1>
+    </header>
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-3 sticky-top d-flex flex-column p-4 p-lg-3">
+                    <h1>Search for a City:</h1>
+                    
+                    <input id="searchTerm" type="text" value="" />
+                    <button onclick="getWeather()" class="btn btn-primary">Search</button>
+                    
+                </div>
+                <div class="row">
+                    <div class="col-12 condition">
+                        <h1>
+                            <span id="place"></span>
+                            <span id="date"></span>
+                        </h1>
+                        <ul>
+                            <li>
+                                Temp:
+                                <span id="main-temp"></span>
+                            </li>
+                            <li>
+                                Wind:
+                                <span id="main-wind"></span>
+                            </li>
+                            <li>
+                                Humidity:
+                                <span id="main-humid"></span>
+                            </li>
+                            <li>
+                                UV Index:
+                                <span id="main-uvi"></span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-12">
+                        <h1>5-Day Forecast</h1>
+                        <div class="row">
+                            <div class="col-12" id="five-forecast">
+                                    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                        
+                    
+                
+            </div>
+        </div>
+
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-ui-touch-punch@0.2.3/jquery.ui.touch-punch.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.15.0/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
